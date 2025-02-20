@@ -1,0 +1,3 @@
+- Write tests for the Python version.  
+- Create a README explaining the Python and Node.js versions and how to use them.  
+- Fix bugs and ensure both versions function identically.  

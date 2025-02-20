@@ -1,0 +1,31 @@
+{
+  "name": "concise-logging",
+  "version": "1.0.2",
+  "description": "An advanced yet easy-to-use logging library.",
+  "main": "ConciseLogging.js",
+  "scripts": {
+    "tests": "npx jest"
+  },
+  "author": "RuskyDev",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "4.1.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "keywords": [
+    "logging",
+    "advanced logging",
+    "easy to use logging",
+    "console logging",
+    "log levels",
+    "custom logger",
+    "chalk logging",
+    "colorful logging",
+    "nodejs logger",
+    "javascript logging",
+    "time format logging",
+    "unix timestamp logging"
+  ]
+}
