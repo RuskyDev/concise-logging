@@ -69,5 +69,5 @@ logger.fatal("CRASH", message="Application crashed unexpectedly.")
 This project is licensed under the [MIT License](https://rusky.is-a.dev/cdn/licenses/MIT.txt).
 
 ## Author
-Made with ♥ by [Ayaan](https://rusky.is-a.dev?ref=npmjs)
+Made with ♥ by [Ayaan](https://rusky.is-a.dev?ref=github)
 
