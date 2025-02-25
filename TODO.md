@@ -1,3 +1,2 @@
 - Write tests for the Python version.  
-- Create a README file explaining the Python and Node.js versions and how to use them. Also, create separate README files for the PyPI and npm packages.
-- Fix bugs and ensure both versions function identically.  
+- Fix bugs and ensure both versions function identically. [NodeJS is fully tested, but Python hasn't been tested properly yet, although it seems to be working correctly.]

@@ -9,21 +9,21 @@ An advanced yet easy-to-use logging library.
 
 ## Installation
 ```
-npm i concise-logging
+pip install concise-logging
 ```
 
 ## Usage Example
 ```
-const ConciseLogger = require('concise-logging');
+from ConciseLogging import ConciseLogger
 
-const logger = new ConciseLogger({ time_format: 24, unix: true });
+logger = ConciseLogger(time_format=24, unix=True)
 
-logger.trace("SYSTEM", "INIT", "This is a trace message.");
-logger.debug("DATABASE", "Debugging database connection.");
-logger.info("SERVER", "Server started successfully.");
-logger.warn("MEMORY", "Memory usage is high!");
-logger.error("API", "TIMEOUT", "Failed to fetch data from API.");
-logger.fatal("CRASH", "Application crashed unexpectedly.");
+logger.trace("SYSTEM", "INIT", message="This is a trace message.")
+logger.debug("DATABASE", message="Debugging database connection.")
+logger.info("SERVER", message="Server started successfully.")
+logger.warn("MEMORY", message="Memory usage is high!")
+logger.error("API", "TIMEOUT", message="Failed to fetch data from API.")
+logger.fatal("CRASH", message="Application crashed unexpectedly.")
 ```
 
 ## Log Output Example
@@ -46,5 +46,5 @@ logger.fatal("CRASH", "Application crashed unexpectedly.");
 This project is licensed under the [MIT License](https://rusky.is-a.dev/cdn/licenses/MIT.txt).
 
 ## Author
-Made with ♥ by [Ayaan](https://rusky.is-a.dev?ref=npmjs)
+Made with ♥ by [Ayaan](https://rusky.is-a.dev?ref=pypi)
 

@@ -1,6 +1,6 @@
 {
   "name": "concise-logging",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An advanced yet easy-to-use logging library.",
   "main": "ConciseLogging.js",
   "scripts": {

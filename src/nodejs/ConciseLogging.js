@@ -25,9 +25,8 @@
 
 const chalk = require('chalk');
 
-class ConciseLogging {
-    constructor({ name = 'ConciseLogger', time_format = 24, unix = false } = {}) {
-        this.name = name;
+class ConciseLogger {
+    constructor({ time_format = 24, unix = false } = {}) {
         this.time_format = time_format;
         this.unix = unix;
         this.LEVELS = {
@@ -112,4 +111,4 @@ class ConciseLogging {
     }
 }
 
-module.exports = ConciseLogging;
+module.exports = ConciseLogger;

@@ -66,7 +66,7 @@ class ConciseFormatter(logging.Formatter):
 
         return f"[{time_str}] [{color}{level}{colorama.Fore.RESET}] {extra_levels} {message}"
 
-class ConciseLogging:
+class Logger:
     LEVELS = {
         "TRACE": 5,
         "DEBUG": 10,
@@ -76,8 +76,8 @@ class ConciseLogging:
         "FATAL": 50
     }
 
-    def __init__(self, name="ConciseLogger", time_format=24, unix=False):
-        self.logger = logging.getLogger(name)
+    def __init__(self, time_format=24, unix=False):
+        self.logger = logging.getLogger()
         self.logger.setLevel(logging.DEBUG)
         
         for level_name, level_value in self.LEVELS.items():
