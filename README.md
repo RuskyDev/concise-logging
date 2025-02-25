@@ -8,12 +8,21 @@ An advanced yet easy-to-use logging library.
 - Multiple Methods: Log using TRACE, DEBUG, INFO, WARN, ERROR, and FATAL.  
 
 ## Installation
+### Node.js  
+Install via npm:
 ```
-npm i concise-logging
+npm install concise-logging
 ```
 
-## Usage Example
+### Python  
+Install via pip:
 ```
+pip install concise-logging
+```
+
+## Usage Examples
+### Node.js Example
+```js
 const ConciseLogger = require('concise-logging');
 
 const logger = new ConciseLogger({ time_format: 24, unix: true });
@@ -24,6 +33,20 @@ logger.info("SERVER", "Server started successfully.");
 logger.warn("MEMORY", "Memory usage is high!");
 logger.error("API", "TIMEOUT", "Failed to fetch data from API.");
 logger.fatal("CRASH", "Application crashed unexpectedly.");
+```
+
+### Python Example
+```python
+from ConciseLogging import ConciseLogger
+
+logger = ConciseLogger(time_format=24, unix=True)
+
+logger.trace("SYSTEM", "INIT", message="This is a trace message.")
+logger.debug("DATABASE", message="Debugging database connection.")
+logger.info("SERVER", message="Server started successfully.")
+logger.warn("MEMORY", message="Memory usage is high!")
+logger.error("API", "TIMEOUT", message="Failed to fetch data from API.")
+logger.fatal("CRASH", message="Application crashed unexpectedly.")
 ```
 
 ## Log Output Example
@@ -37,10 +60,10 @@ logger.fatal("CRASH", "Application crashed unexpectedly.");
 ```
 
 ## Configuration Options
-| Parameter      | Description                                  | Default    |
-|----------------|----------------------------------------------|------------|
-| `time_format` | Time display format (`12` or `24` hours)      | `24`       |
-| `unix`        | Append Unix timestamp (`True` or `False`)     | `False`    |
+| Parameter     | Description                                 | Default |
+|---------------|---------------------------------------------|---------|
+| `time_format` | Time display format (`12` or `24` hours)     | `24`    |
+| `unix`        | Append Unix timestamp (`True` or `False`)    | `False` |
 
 ## License
 This project is licensed under the [MIT License](https://rusky.is-a.dev/cdn/licenses/MIT.txt).
